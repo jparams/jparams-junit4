@@ -2,8 +2,8 @@ apply plugin: 'nexus'
 
 modifyPom {
     project {
-        name 'jparams-junit4-test'
-        description 'Parameterized JUnit 4 Tests'
+        name 'jparams-junit4'
+        description 'Parameterized JUnit4 Tests'
         url 'https://github.com/jparams/jparams-junit4-test'
         packaging 'jar'
         organization {
@@ -18,9 +18,9 @@ modifyPom {
             }
         }
         scm {
-            url 'https://github.com/jparams/jparams-junit4-test'
-            connection 'scm:git:https://github.com/jparams/jparams-junit4-test.git'
-            developerConnection 'scm:git@github.com:jparams/jparams-junit4-test.git'
+            url 'https://github.com/jparams/jparams-junit4'
+            connection 'scm:git:https://github.com/jparams/jparams-junit4.git'
+            developerConnection 'scm:git@github.com:jparams/jparams-junit4.git'
         }
         developers {
             developer {
