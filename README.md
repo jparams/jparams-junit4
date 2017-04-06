@@ -3,7 +3,7 @@
 ## Getting Started
 
 ### Create a Test
-Create a test class and run it with `JParamsJUnit4TestRunner`
+Create a test class and run it with `JParamsTestRunner`
 
 ```java
 @RunWith(JParamsTestRunner.class)
