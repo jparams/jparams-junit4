@@ -5,6 +5,23 @@
 
 ## Getting Started
 
+### Get JParams
+
+Maven:
+```
+<dependency>
+    <groupId>com.jparams</groupId>
+    <artifactId>jparams-junit4</artifactId>
+    <version>1.x.x</version>
+    <scope>test</scope>
+</dependency>
+```
+
+Gradle:
+```
+testCompile 'com.jparams:jparams-junit4:1.x.x'
+```
+
 ### Create a Test
 Create a test class and run it with `JParamsTestRunner`
 
@@ -204,3 +221,9 @@ public class SomeTest {
     }
 }
 ```
+
+## Compatibility
+This library is compatible with: JUnit 4.12 and Java 7 and above.
+
+## License
+Free to use, modify an distribute under the [MIT License](http://www.opensource.org/licenses/mit-license.php)
