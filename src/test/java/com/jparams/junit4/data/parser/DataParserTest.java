@@ -78,4 +78,19 @@ public class DataParserTest {
         assertThat(parse[0]).containsExactly("1", "2", "3", "4, 5, 6");
         assertThat(parse[1]).containsExactly("7", "8", "9");
     }
+
+    @Test
+    public void returnsEmptyArrayIfInputIsEmpty() throws Exception {
+        String[][] parse = DataParser.parse("   ");
+
+        assertThat(parse).isEmpty();
+    }
+
+    @Test
+    public void returnsEmptyArrayOnEmptyLine() throws Exception {
+        String[][] parse = DataParser.parse("a, b\n  ");
+
+        assertThat(parse).hasSize(2);
+        assertThat(parse[1]).isEmpty();
+    }
 }

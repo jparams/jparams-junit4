@@ -4,6 +4,9 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 
 public class Reflection {
+    private Reflection() {
+    }
+
     public static MethodParameter[] getMethodParameters(Method method) {
         Class<?>[] parameterTypes = method.getParameterTypes();
         Annotation[][] parameterAnnotations = method.getParameterAnnotations();

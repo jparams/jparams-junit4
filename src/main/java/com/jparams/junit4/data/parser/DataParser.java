@@ -17,6 +17,10 @@ public final class DataParser {
     }
 
     public static String[][] parse(String input) {
+        if (input.trim().isEmpty()) {
+            return new String[0][];
+        }
+
         String[] lines = input.split(System.lineSeparator());
         String[][] output = new String[lines.length][];
 
@@ -28,6 +32,10 @@ public final class DataParser {
     }
 
     private static String[] parseLine(String line) {
+        if (line.trim().isEmpty()) {
+            return new String[0];
+        }
+
         List<String> values = new ArrayList<>();
         StringBuilder builder = new StringBuilder();
 

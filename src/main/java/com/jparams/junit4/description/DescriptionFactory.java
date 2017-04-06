@@ -1,6 +1,6 @@
 package com.jparams.junit4.description;
 
-import com.google.common.base.Joiner;
+import com.jparams.junit4.util.Joiner;
 import org.junit.runner.Description;
 import org.junit.runners.model.FrameworkMethod;
 
@@ -39,6 +39,6 @@ public class DescriptionFactory {
             .replace("{class}", testClass.getSimpleName())
             .replace("{method}", method)
             .replace("{index}", String.valueOf(index))
-            .replace("{params}", Joiner.on(", ").join(row));
+            .replace("{params}", Joiner.join(row, ", "));
     }
 }

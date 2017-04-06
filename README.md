@@ -1,5 +1,8 @@
 # JParams for JUnit 4
 
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.jparams/jparams-junit4/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.jparams/jparams-junit4)
+ [![Build Status](https://travis-ci.org/jparams/jparams-junit4.svg?branch=master)](https://travis-ci.org/jparams/jparams-junit4)
+
 ## Getting Started
 
 ### Create a Test

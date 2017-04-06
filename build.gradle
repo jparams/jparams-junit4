@@ -1,5 +1,5 @@
 group = 'com.jparams'
-version = '1.0.1'
+version = '1.0.3'
 
 apply plugin: 'java'
 apply plugin: 'nexus'
@@ -24,7 +24,6 @@ buildscript {
 
 dependencies {
     compile 'junit:junit:4.12'
-    compile 'com.google.guava:guava:20.0'
 
     testCompile 'org.assertj:assertj-core:2.6.0'
     testCompile 'eu.codearte.catch-exception:catch-exception:1.4.4'

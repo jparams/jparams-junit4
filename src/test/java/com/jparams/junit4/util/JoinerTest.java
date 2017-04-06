@@ -1,4 +1,4 @@
-package com.jparams.junit4.test.util;
+package com.jparams.junit4.util;
 
 import org.junit.Test;
 
@@ -7,10 +7,10 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class ObjectUtilsTest {
+public class JoinerTest {
     @Test
     public void joinsArrays() throws Exception {
-        String joined = ObjectUtils.join(new Object[] {
+        String joined = Joiner.join(new Object[] {
             1, "a", "b"
         }, ", ");
 
@@ -20,7 +20,7 @@ public class ObjectUtilsTest {
     @Test
     public void joinsIterable() throws Exception {
         List<Object> strings = Arrays.<Object>asList(1, "b", "c");
-        String joined = ObjectUtils.join(strings, ", ");
+        String joined = Joiner.join(strings, ", ");
 
         assertThat(joined).isEqualTo("1, b, c");
     }

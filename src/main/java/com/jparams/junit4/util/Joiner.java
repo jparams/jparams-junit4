@@ -1,10 +1,10 @@
-package com.jparams.junit4.test.util;
+package com.jparams.junit4.util;
 
 import java.util.Arrays;
 import java.util.Iterator;
 
-public final class ObjectUtils {
-    private ObjectUtils() {
+public class Joiner {
+    private Joiner() {
     }
 
     public static String join(Iterable<Object> objects, String separator) {
