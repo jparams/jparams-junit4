@@ -1,0 +1,47 @@
+group = 'com.jparams'
+<<<<<<< HEAD
+version = '1.0.2'
+
+apply plugin: 'java'
+apply plugin: 'nexus'
+
+apply from: 'publish.gradle'
+
+sourceCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-nexus-plugin:0.6.1'
+    }
+}
+
+dependencies {
+    compile 'junit:junit:4.12'
+    compile 'com.google.guava:guava:21.0'
+    
+=======
+
+version = '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.7
+
+dependencies {
+    compile 'junit:junit:4.12'
+
+>>>>>>> 7d07dc7... first commit
+    testCompile 'org.assertj:assertj-core:2.6.0'
+    testCompile 'eu.codearte.catch-exception:catch-exception:1.4.4'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+}

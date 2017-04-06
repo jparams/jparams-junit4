@@ -1,0 +1,5 @@
+language: java
+jdk:
+- oraclejdk7
+script:
+- gradle clean build uploadArchives -PnexusUsername=$NEXUS_USERNAME -PnexusPassword=$NEXUS_PASSWOWRD -Psigning.keyId=$SIGNING_KEY -Psigning.password=$SIGNING_PASSWORD -Psigning.secretKeyRingFile=key.gpg
