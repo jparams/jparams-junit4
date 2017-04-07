@@ -18,7 +18,7 @@ apply plugin: 'coveralls'
 apply from: 'publish.gradle'
 
 group = 'com.jparams'
-version = '1.0.3'
+version = '1.0.4'
 
 sourceCompatibility = 1.7
 
