@@ -50,14 +50,12 @@ public class SomeTest {
         assertThat(input1).isNotEqualTo(input2);
     }
 
-    Reader
     @DataFile(path = "data.csv", location = Location.CLASSPATH)
     @Test
     public void fileInClassPath(String input1, String input2) throws Exception {
         assertThat(input1).isNotEqualTo(input2);
     }
 
-    Reader
     @DataFile(path = "/data.csv", location = Location.FILE)
     @Test
     public void fileInFileSystem(String input1, String input2) throws Exception {
